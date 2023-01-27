@@ -6,7 +6,6 @@ import * as gtag from "../lib/ gtag";
 
 
 import { ThemeProvider } from "styled-components";
-import { Globalstyle } from "../global/global";
 import { theme } from "../global/theme";
 
 import "react-toastify/dist/ReactToastify.css";
@@ -20,6 +19,8 @@ import store from "../redux/store";
 import { Provider } from "react-redux";
 
 // import styles
+
+import '../styles/globals.css'
 
 import { GlobalProvider } from "../context/GlobalContext";
 
