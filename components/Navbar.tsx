@@ -23,6 +23,10 @@ const NavLink = styled.a`
   text-transform: capitalize;
   color: rgba(255, 255, 255, 0.72);
   margin-left: 5rem;
+  &:hover {
+    color: #fff;
+    cursor: pointer;
+  }
 
 `;
 

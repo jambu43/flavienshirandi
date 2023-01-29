@@ -34,7 +34,7 @@ const Footer = () => {
 const FooterContainer = styled.div`
   padding: 11.3rem 5rem;
   display: flex;
-  position: absolute;
+  position: relative;
   width: 100%;
   bottom: 0;
   background-color: #000;
