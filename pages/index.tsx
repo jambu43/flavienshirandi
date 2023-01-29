@@ -1,5 +1,6 @@
 import type { NextPage } from "next";
 import Head from "next/head";
+import About from "../components/home/About";
 import Banner from "../components/home/Banner";
 import Brand from "../components/home/Brand";
 import Layout from "../components/Layout";
@@ -13,6 +14,7 @@ const Home: NextPage = () => {
       <Layout>
         <Banner/>
         <Brand />
+        <About />
       </Layout>
     </div>
   );
