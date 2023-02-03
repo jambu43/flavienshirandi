@@ -4,34 +4,31 @@ import styled from "styled-components";
 
 function Banner() {
   return (
-    <div className="container">
-      <BannerComponent>
-        <DescriptionBlock>
-          <Title>
-            Assist you get – and stay – ready to take on the leadership
-            challenges you face.{" "}
-          </Title>
-          <Description>
-            With 18 years’ experience in leadership consulting. We've built a
-            reputation for delivering real impact for our clients — from the
-            world’s largest companies to politicals to nonprofits.
-          </Description>
-          <Line />
-          <SignUpTitle>Sign up</SignUpTitle>
-          <SignUpDescription>
-            Receive Flavien Shirandi’s latest analysis.
-          </SignUpDescription>
-          <FormRow>
-            <SelectTopic />
-            <EmailInput />
-          </FormRow>
-        </DescriptionBlock>
-        <AboutImageContainer>
-          
-          <AboutImage src="/images/about/about-banner.png" />
-        </AboutImageContainer>
-      </BannerComponent>
-    </div>
+    <BannerComponent>
+      <DescriptionBlock>
+        <Title>
+          Assist you get – and stay – ready to take on the leadership challenges
+          you face.{" "}
+        </Title>
+        <Description>
+          With 18 years’ experience in leadership consulting. We've built a
+          reputation for delivering real impact for our clients — from the
+          world’s largest companies to politicals to nonprofits.
+        </Description>
+        <Line />
+        <SignUpTitle>Sign up</SignUpTitle>
+        <SignUpDescription>
+          Receive Flavien Shirandi’s latest analysis.
+        </SignUpDescription>
+        <FormRow>
+          <SelectTopic />
+          <EmailInput />
+        </FormRow>
+      </DescriptionBlock>
+      <AboutImageContainer>
+        <AboutImage src="/images/about/about-banner.png" />
+      </AboutImageContainer>
+    </BannerComponent>
   );
 }
 
@@ -94,7 +91,6 @@ const SelectTopic = styled.select`
   border-bottom-right-radius: 0px;
   border-right: 0;
   height: 65px;
-  
 `;
 const EmailInput = styled.input`
   height: 65px;
@@ -106,7 +102,7 @@ const EmailInput = styled.input`
   border-bottom-left-radius: 0px;
   width: 250px;
 `;
- const AboutImageContainer = styled.div``;
+const AboutImageContainer = styled.div``;
 const AboutImage = styled.img`
   width: 80%;
 `;
