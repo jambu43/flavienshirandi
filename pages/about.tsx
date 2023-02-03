@@ -4,6 +4,7 @@ import Layout from "../components/Layout";
 import styled from "styled-components";
 import Capabilities from "../components/about/Capabilities";
 import Leaders from "../components/about/Leaders";
+import Stats from "../components/about/Stats";
 
 function about() {
   return (
@@ -13,6 +14,7 @@ function about() {
           <Banner />
           <Capabilities />
           <Leaders />
+          <Stats />
         </div>
       </Layout>
     </BasedComponent>
