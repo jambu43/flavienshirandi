@@ -5,6 +5,7 @@ import styled from "styled-components";
 import Capabilities from "../components/about/Capabilities";
 import Leaders from "../components/about/Leaders";
 import Stats from "../components/about/Stats";
+import Partners from "../components/about/Partners";
 
 function about() {
   return (
@@ -15,6 +16,7 @@ function about() {
           <Capabilities />
           <Leaders />
           <Stats />
+          <Partners /> 
         </div>
       </Layout>
     </BasedComponent>
