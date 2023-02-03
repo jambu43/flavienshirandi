@@ -50,7 +50,7 @@ function Banner() {
 }
 
 const BannerComponent = styled.div`
-  height: 750px;
+  height: 900px;
   display: flex;
   width: 100%;
   padding: 0 5rem;
