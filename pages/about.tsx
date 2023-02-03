@@ -3,17 +3,19 @@ import Banner from "../components/about/Banner";
 import Layout from "../components/Layout";
 import styled from "styled-components";
 import Capabilities from "../components/about/Capabilities";
+import Leaders from "../components/about/Leaders";
 
 function about() {
   return (
-    <Layout>
-      <BasedComponent>
+    <BasedComponent>
+      <Layout>
         <div className="container">
           <Banner />
           <Capabilities />
+          <Leaders />
         </div>
-      </BasedComponent>
-    </Layout>
+      </Layout>
+    </BasedComponent>
   );
 }
 
