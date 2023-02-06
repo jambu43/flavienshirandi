@@ -6,6 +6,7 @@ import Capabilities from "../components/about/Capabilities";
 import Leaders from "../components/about/Leaders";
 import Stats from "../components/about/Stats";
 import Partners from "../components/about/Partners";
+import News from "../components/about/News";
 
 function about() {
   return (
@@ -16,8 +17,10 @@ function about() {
           <Capabilities />
           <Leaders />
           <Stats />
-          <Partners /> 
+          <Partners />
         </div>
+
+        <News />
       </Layout>
     </BasedComponent>
   );
@@ -32,3 +35,5 @@ const BasedComponent = styled.div`
   );
 `;
 export default about;
+
+
