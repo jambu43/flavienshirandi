@@ -3,10 +3,17 @@ import React from "react";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
 
-const Layout = ({ children }: any) => {
+export type Props = {
+  bgColor: string;
+  logo: string;
+  textColor: string;
+};
+
+export const Layout: React.FC<Props> = ({ bgColor, logo, textColor, children }) => {
+
   return (
     <div>
-      <Navbar />
+      <Navbar bgColor={bgColor} logo={logo} textColor={textColor} />
       <div>{children}</div>
       <Footer />
     </div>
