@@ -7,7 +7,7 @@ function Banner() {
   const containerRef = useRef(null);
 
   return (
-    <BannerComponent>
+    <BannerComponent data-scroll-section>
       <SocialContainer>
         <Link href="#">
           <SocialLink>Twitter</SocialLink>
@@ -26,7 +26,11 @@ function Banner() {
         <ImgCircle src="/images/home/circle.png" />
       </ImgContainer>
       <DescriptionContainer>
-        <Title>
+        <Title
+          data-scroll
+          data-scroll-direction="horizontal"
+          data-scroll-speed="6"
+        >
           J'accompagne les leaders à obtenir des résultats en utilisant des
           méthodes disruptives et responsables.
         </Title>
