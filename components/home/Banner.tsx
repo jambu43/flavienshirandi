@@ -1,23 +1,26 @@
 import Link from "next/link";
-import React from "react";
+import React, { useRef } from "react";
 import styled from "styled-components";
+import { LocomotiveScrollProvider } from "react-locomotive-scroll";
 
 function Banner() {
+  const containerRef = useRef(null);
+
   return (
     <BannerComponent>
       <SocialContainer>
-          <Link href="#">
-            <SocialLink>Twitter</SocialLink>
-          </Link>
-          <Link href="#">
-            <SocialLink>Linkedin</SocialLink>
-          </Link>
-          <Link href="#">
-            <SocialLink>Youtube</SocialLink>
-          </Link>
-          <Link href="#">
-            <SocialLink>Facebook</SocialLink>
-          </Link>
+        <Link href="#">
+          <SocialLink>Twitter</SocialLink>
+        </Link>
+        <Link href="#">
+          <SocialLink>Linkedin</SocialLink>
+        </Link>
+        <Link href="#">
+          <SocialLink>Youtube</SocialLink>
+        </Link>
+        <Link href="#">
+          <SocialLink>Facebook</SocialLink>
+        </Link>
       </SocialContainer>
       <ImgContainer>
         <ImgCircle src="/images/home/circle.png" />
@@ -117,13 +120,12 @@ const SocialLink = styled.a`
   font-weight: 400;
   font-size: 10px;
   text-transform: uppercase;
-  color:#848484;
+  color: #848484;
   margin-left: 20px;
   &:hover {
     color: #fff;
     cursor: pointer;
   }
-
 `;
 
 export default Banner;
