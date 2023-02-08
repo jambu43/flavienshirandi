@@ -15,14 +15,12 @@ const Home: NextPage = () => {
         <title>Flavien Shirandi</title>
       </Head>
       <Layout>
-        
-          <Banner />
-          <Brand />
-          <About />
-          <Article />
-          <Expertise />
-          <GetTouch />
-        
+        <Banner />
+        <Brand />
+        <About />
+        <Article />
+        <Expertise />
+        <GetTouch />
       </Layout>
     </div>
   );

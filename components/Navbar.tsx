@@ -7,12 +7,13 @@ export type Props = {
   textColor: string;
 };
 
+
 export const Navbar: React.FC<Props> = ({ bgColor, logo, textColor }) => {
   return (
     <NavContainer bgColor={bgColor ? bgColor: "#000"}>
       <NavLogo>
         <Link href="/">
-          <img src={logo ? logo : "logo/logo.png" } alt="FLAVIENSHIRANDI" />
+          <img src={logo ? logo : "logo/logo.png" } alt="FLAVIENSHIRAND" />
         </Link>
       </NavLogo>
 
@@ -41,7 +42,9 @@ export const Navbar: React.FC<Props> = ({ bgColor, logo, textColor }) => {
   );
 };
 
-const NavContainer = styled.div`
+
+
+const NavContainer = styled.div<Props>`
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -56,7 +59,7 @@ const NavElement = styled.div`
   display: flex;
 `;
 
-const NavLink = styled.a`
+const NavLink = styled.a<Props>`
   font-style: normal;
   font-weight: 400;
   font-size: 14px;

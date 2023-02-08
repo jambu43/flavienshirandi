@@ -4,28 +4,39 @@ import LineDote from "./LineDote";
 
 function About() {
   return (
-    <div className="container" style={{ padding: "5rem 0" }}>
-      <Content>
-        <Title>Who We Coach</Title>
-        <Description>
+    <div
+      className="container"
+      // style={{ padding: "5rem 0" }}
+      data-scroll-section
+    >
+      <Content >
+        <Title data-scroll-direction="horizontal"
+          data-scroll-speed="3">
+          Who We Coach
+        </Title>
+        <Description >
           Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi.
           Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla,
           mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis
           tellus.
-          <LineDote />
+          <LineDote   />
         </Description>
       </Content>
       <BrandContent>
-        <Brand>Board of Directors</Brand>
-        <LineDote style={{ margin: 0 }} />
-        <Brand>Individual Directors</Brand>
+        <Brand >
+          Board of Directors
+        </Brand>
+        <LineDote style={{ margin: 0 }}  />
+        <Brand >
+          Individual Directors
+        </Brand>
       </BrandContent>
-      <Text>
+      <Text >
         Les entreprises sont le reflet de leur dirigeant : Les leaders statiques
         gouvernent des organisations stagnantes, les leaders agiles dirigent des
         organisations qui grandissent.
       </Text>
-      <Text>
+      <Text >
         Les grands leaders investissent toujours en eux-mêmes et en leurs
         collaborateurs.
       </Text>

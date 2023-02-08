@@ -3,17 +3,17 @@ import styled from "styled-components";
 
 function Brand() {
   return (
-    <div className="container">
+    <div className="container" data-scroll-section>
       <BrandContainer>
         <TitleContainer>
-          <TitleBrand>
+          <TitleBrand data-scroll data-scroll-speed="3">
             Becoming a <GreenText>great leader</GreenText> doesn't just happen
             <GreenText>.</GreenText>
           </TitleBrand>
           <Line />
         </TitleContainer>
         <BrandContent>
-          <Brands>
+          <Brands data-scroll data-scroll-speed="3">
             <BrandImg
               src="/images/home/brands/transp-hires-words.png"
               style={{ width: "100px" }}
@@ -43,7 +43,7 @@ function Brand() {
               style={{ width: "400px" }}
             />
           </Brands>
-          <BrandDescription>
+          <BrandDescription data-scroll data-scroll-speed="3">
             Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa
             mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien
             fringilla, mattis ligula consectetur, ultrices mauris. Maecenas
@@ -54,7 +54,7 @@ function Brand() {
             ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet
             augue. Vestibulum auctor ornare leo, non suscipit.
           </BrandDescription>
-          <BrandVector src="/images/home/brands/vector.png" />
+          <BrandVector src="/images/home/brands/vector.png" data-scroll data-scroll-speed="3"/>
         </BrandContent>
       </BrandContainer>
     </div>

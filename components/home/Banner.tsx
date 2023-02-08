@@ -1,14 +1,11 @@
 import Link from "next/link";
 import React, { useRef } from "react";
 import styled from "styled-components";
-import { LocomotiveScrollProvider } from "react-locomotive-scroll";
 
 function Banner() {
-  const containerRef = useRef(null);
-
   return (
     <BannerComponent data-scroll-section>
-      <SocialContainer>
+      <SocialContainer data-scroll data-scroll-speed="3">
         <Link href="#">
           <SocialLink>Twitter</SocialLink>
         </Link>
@@ -28,13 +25,12 @@ function Banner() {
       <DescriptionContainer>
         <Title
           data-scroll
-          data-scroll-direction="horizontal"
-          data-scroll-speed="6"
+          data-scroll-speed="3"
         >
           J'accompagne les leaders à obtenir des résultats en utilisant des
           méthodes disruptives et responsables.
         </Title>
-        <Description>
+        <Description  data-scroll data-scroll-speed="3">
           Je crois en la capacité des leaders à apporter une contribution
           significative aux entreprises, et je suis convaincus que leur réussite
           est directement liée à l'adoption de méthodes disruptives et
@@ -44,8 +40,8 @@ function Banner() {
           ressources nécessaires pour faire face à la pression organisationnelle
           ainsi qu'aux enjeux actuels et futurs.
         </Description>
-        <Action>SCROLL TO DISCOVER</Action>
-        <CopyrightContainer>
+        <Action data-scroll data-scroll-speed="3">SCROLL TO DISCOVER</Action>
+        <CopyrightContainer data-scroll data-scroll-speed="3">
           <Text>
             N 43’30”32.0 <br />O 43’30”32.0
           </Text>
@@ -95,7 +91,7 @@ const Description = styled.p`
   line-height: 154.5%;
   color: #848484;
   width: 80%;
-  margin: 2rem 0 3rem;
+  margin: 2rem 0 5rem;
 `;
 const Action = styled.a`
   border: 1px solid #848484;
