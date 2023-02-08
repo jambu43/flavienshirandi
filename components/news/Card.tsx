@@ -40,7 +40,7 @@ export const Card: React.FC<Props> = ({
   );
 };
 
-const CardContainer = styled.div`
+const CardContainer = styled.div<Props>`
   width: 25%;
   position: relative;
   top: ${(props)=> props.position};
@@ -52,7 +52,7 @@ const CardHead = styled.div`
 const CardContent = styled.div`
   text-align: right;
 `;
-const Dote = styled.div`
+const Dote = styled.div<Props>`
   width: 10px;
   height: 10px;
   background: ${(props) => props.doteColor};
