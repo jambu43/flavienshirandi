@@ -23,24 +23,18 @@ function Banner() {
         <ImgCircle src="/images/home/circle.png" />
       </ImgContainer>
       <DescriptionContainer>
-        <Title
-          data-scroll
-          data-scroll-speed="3"
-        >
-          J'accompagne les leaders à obtenir des résultats en utilisant des
-          méthodes disruptives et responsables.
+        <Title data-scroll data-scroll-speed="3">
+          Coach leaders to achieve results using disruptive and responsible
+          methods.
         </Title>
-        <Description  data-scroll data-scroll-speed="3">
-          Je crois en la capacité des leaders à apporter une contribution
-          significative aux entreprises, et je suis convaincus que leur réussite
-          est directement liée à l'adoption de méthodes disruptives et
-          responsables. J’accompagne donc les leaders dans leurs efforts pour
-          obtenir des résultats supérieurs grâce à l’utilisation de méthodes
-          disruptives et responsables en leurs offrant des outils et des
-          ressources nécessaires pour faire face à la pression organisationnelle
-          ainsi qu'aux enjeux actuels et futurs.
+        <Description data-scroll data-scroll-speed="3">
+          I believe in the ability of leaders to make a significant contribution
+          to business, and I am convinced that their success is directly linked
+          to the adoption of disruptive and responsible methods.
         </Description>
-        <Action data-scroll data-scroll-speed="3">SCROLL TO DISCOVER</Action>
+        <Action data-scroll data-scroll-speed="3">
+          SCROLL TO DISCOVER
+        </Action>
         <CopyrightContainer data-scroll data-scroll-speed="3">
           <Text>
             N 43’30”32.0 <br />O 43’30”32.0

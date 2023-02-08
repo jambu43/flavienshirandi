@@ -5,7 +5,7 @@ function Article() {
   return (
     <ArticleContainer data-scroll-section>
       <div className="container">
-        <Title data-scroll data-scroll-speed="1">Articles & Analysis</Title>
+        <Title>Articles & Analysis</Title>
       </div>
     </ArticleContainer>
   );

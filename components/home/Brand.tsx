@@ -44,17 +44,21 @@ function Brand() {
             />
           </Brands>
           <BrandDescription data-scroll data-scroll-speed="3">
-            Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa
-            mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien
-            fringilla, mattis ligula consectetur, ultrices mauris. Maecenas
-            vitae mattis tellus. Nullam quis imperdiet augue. Vestibulum auctor
-            ornare leo, non suscipit.Lorem ipsum dolor sit amet consectetur
-            adipiscing elit Ut et massa mi. Aliquam in hendrerit urna.
-            Pellentesque sit amet sapien fringilla, mattis ligula consectetur,
-            ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet
-            augue. Vestibulum auctor ornare leo, non suscipit.
+            In the 21st century, human behaviours have changed dramatically and
+            so have expectations of the overall experience. Leaders must address
+            this growing reality to deliver changing value; this requires a deep
+            understanding of the environment, human behaviours, as well as an
+            understanding of leadership as a whole. For more than 15 years, I
+            have been coaching Fortune 500 leaders and more than 7 Presidents of
+            republics towards excellence by developing best practices to gain
+            insight, impact and positive influence on a daily basis in a
+            sustainable way.
           </BrandDescription>
-          <BrandVector src="/images/home/brands/vector.png" data-scroll data-scroll-speed="3"/>
+          <BrandVector
+            src="/images/home/brands/vector.png"
+            data-scroll
+            data-scroll-speed="3"
+          />
         </BrandContent>
       </BrandContainer>
     </div>
@@ -114,6 +118,5 @@ const BrandVector = styled.img`
   width: 100%;
   bottom: 15%;
 `;
-
 
 export default Brand;

@@ -9,27 +9,22 @@ function About() {
       style={{ padding: "5rem 0" }}
       data-scroll-section
     >
-      <Content >
-        <Title data-scroll-direction="horizontal"
-          data-scroll-speed="3">
+      <Content>
+        <Title data-scroll-direction="horizontal" data-scroll-speed="3">
           Who We Coach
         </Title>
-        <Description >
-          Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi.
-          Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla,
-          mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis
-          tellus.
-          <LineDote   />
+        <Description>
+          I support leaders in their efforts to achieve superior results through
+          the use of disruptive and accountable methods by providing them with
+          the tools and resources necessary to address organizational pressures
+          and current and future challenges.
+          <LineDote />
         </Description>
       </Content>
       <BrandContent data-scroll data-scroll-speed="3">
-        <Brand >
-          Board of Directors
-        </Brand>
-        <LineDote style={{ margin: 0 }}  />
-        <Brand >
-          Individual Directors
-        </Brand>
+        <Brand>Board of Directors</Brand>
+        <LineDote style={{ margin: 0 }} />
+        <Brand>Individual Directors</Brand>
       </BrandContent>
       <Text data-scroll data-scroll-speed="3">
         Les entreprises sont le reflet de leur dirigeant : Les leaders statiques

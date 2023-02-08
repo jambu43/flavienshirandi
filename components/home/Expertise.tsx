@@ -8,11 +8,9 @@ function Expertise() {
           <div className="container" data-scroll data-scroll-speed="1">
             <Title>Expertises.</Title>
             <Description>
-              Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa
-              mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien
-              fringilla, mattis ligula consectetur, ultrices mauris. Maecenas
-              vitae mattis tellus. Nullam quis imperdiet augue. Vestibulum
-              auctor ornare leo, non suscipit.
+              Built-in solutions to help your organization achieve goals by
+              equipping you with a clear understanding of what needs to be done
+              and how it needs to be done.
             </Description>
           </div>
         </ExpertiseDescription>
@@ -22,37 +20,33 @@ function Expertise() {
         <Row>
           <Card style={{ bottom: "7rem" }}>
             <Square />
-            <TitleCard>Expertises®</TitleCard>
+            <TitleCard>Political situation analysis®</TitleCard>
             <DescriptionCard>
-              Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa
-              mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien
-              fringilla, mattis ligula consectetur, ultrices mauris. Maecenas
-              vitae mattis tellus. Nullam quis imperdiet augue. Vestibulum
-              auctor ornare leo, non suscipit.
+              I advise leaders in identifying current political trends and
+              anticipating future changes, so that they can make informed
+              decisions that are relevant to their environment.
             </DescriptionCard>
           </Card>
-          <LineBar  style={{ top: "5rem" }}/>
+          <LineBar style={{ top: "5rem" }} />
           <Card style={{ top: "5rem" }}>
             <Square />
-            <TitleCard>Expertises®</TitleCard>
+            <TitleCard>Crisis management</TitleCard>
             <DescriptionCard>
-              Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa
-              mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien
-              fringilla, mattis ligula consectetur, ultrices mauris. Maecenas
-              vitae mattis tellus. Nullam quis imperdiet augue. Vestibulum
-              auctor ornare leo, non suscipit.
+              I support leaders in managing crisis situations effectively,
+              helping them to identify risks, develop contingency plans, and
+              communicate effectively with stakeholders.
             </DescriptionCard>
           </Card>
           <LineBar style={{ top: "8rem" }} />
           <Card style={{ top: "8rem" }}>
             <Square />
-            <TitleCard>Expertises®</TitleCard>
+            <TitleCard>Leadership development</TitleCard>
             <DescriptionCard>
-              Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa
-              mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien
-              fringilla, mattis ligula consectetur, ultrices mauris. Maecenas
-              vitae mattis tellus. Nullam quis imperdiet augue. Vestibulum
-              auctor ornare leo, non suscipit.
+              Leadership development is synonymous with growth and success.
+              Leadership development programmes must be aligned with your
+              evolving needs. That's why my team and I develop coaching
+              programmes that are precisely tailored to your organisation's
+              needs and objectives.
             </DescriptionCard>
           </Card>
         </Row>
@@ -60,7 +54,6 @@ function Expertise() {
     </Container>
   );
 }
-
 
 const Container = styled.div`
   background-color: #fff;
@@ -113,8 +106,8 @@ const Square = styled.div`
 `;
 
 const LineBar = styled.div`
-  background-color: #5F5C5C;
-  width: .5px;
+  background-color: #5f5c5c;
+  width: 0.5px;
   height: 200px;
   position: relative;
 `;
