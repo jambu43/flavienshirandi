@@ -12,7 +12,7 @@ export type Props = {
 export const Layout: React.FC<Props> = ({ bgColor, logo, textColor, children }) => {
 
   return (
-    <div>
+    <div data-scroll-section>
       <Navbar bgColor={bgColor} logo={logo} textColor={textColor} />
       <div>{children}</div>
       <Footer />

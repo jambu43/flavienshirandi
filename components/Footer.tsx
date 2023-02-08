@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 const Footer = () => {
   return (
-    <FooterContainer>
+    <FooterContainer data-scroll-section>
       <FooterLogo>
         <Link href="/">
           <img src="logo/logo.png" alt="" width={200} />
@@ -32,7 +32,7 @@ const Footer = () => {
 };
 
 const FooterContainer = styled.div`
-  padding: 11.3rem 5rem;
+  /* padding: 11.3rem 5rem; */
   display: flex;
   position: relative;
   width: 100%;

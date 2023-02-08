@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 function GetTouch() {
   return (
-    <Container>
+    <Container data-scroll-section>
       <Title>Get In Touch</Title>
       <Action href="#" />
     </Container>

@@ -6,7 +6,7 @@ function About() {
   return (
     <div
       className="container"
-      // style={{ padding: "5rem 0" }}
+      style={{ padding: "5rem 0" }}
       data-scroll-section
     >
       <Content >
@@ -22,7 +22,7 @@ function About() {
           <LineDote   />
         </Description>
       </Content>
-      <BrandContent>
+      <BrandContent data-scroll data-scroll-speed="3">
         <Brand >
           Board of Directors
         </Brand>
@@ -31,12 +31,12 @@ function About() {
           Individual Directors
         </Brand>
       </BrandContent>
-      <Text >
+      <Text data-scroll data-scroll-speed="3">
         Les entreprises sont le reflet de leur dirigeant : Les leaders statiques
         gouvernent des organisations stagnantes, les leaders agiles dirigent des
         organisations qui grandissent.
       </Text>
-      <Text >
+      <Text data-scroll data-scroll-speed="3">
         Les grands leaders investissent toujours en eux-mêmes et en leurs
         collaborateurs.
       </Text>

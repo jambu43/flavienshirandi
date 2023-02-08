@@ -3,9 +3,9 @@ import styled from "styled-components";
 function Expertise() {
   return (
     <Container>
-      <ExpertiseContainer>
+      <ExpertiseContainer data-scroll-section>
         <ExpertiseDescription>
-          <div className="container">
+          <div className="container" data-scroll data-scroll-speed="1">
             <Title>Expertises.</Title>
             <Description>
               Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa
