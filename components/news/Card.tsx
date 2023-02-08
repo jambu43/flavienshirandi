@@ -9,6 +9,7 @@ export type Props = {
   img: string;
   extract: string;
   position: string;
+  color: string;
 };
 
 export const Card: React.FC<Props> = ({
@@ -19,21 +20,22 @@ export const Card: React.FC<Props> = ({
   img,
   extract,
   position,
+  color
 }) => {
   return (
     <CardContainer position={position ? position : ""}>
       <CardHead>
         <Dote doteColor={doteColor} />
-        <Date>{date}</Date>
+        <Date color={color ? color : "#d9b5b5"}>{date}</Date>
       </CardHead>
 
-      <Title>{title}</Title>
-      <TextType>Type</TextType>
-      <TextContentType>{type}</TextContentType>
+      <Title color={color ? color : "#d9b5b5"}>{title}</Title>
+      <TextType color={color ? color : "#d9b5b5"}>Type</TextType>
+      <TextContentType color={color ? color : "#d9b5b5"}>{type}</TextContentType>
       <CardContent>
         <MiniSquare />
         <CardImage src={img} />
-        <CardExtract>{extract}</CardExtract>
+        <CardExtract color={color ? color : "#d9b5b5"}>{extract}</CardExtract>
         <ReadMor href="#">Read more</ReadMor>
       </CardContent>
     </CardContainer>
@@ -58,35 +60,35 @@ const Dote = styled.div<Props>`
   background: ${(props) => props.doteColor};
   border-radius: 100%;
 `;
-const Date = styled.p`
-  color: #d9b5b5;
+const Date = styled.p<Props>`
+  color: ${(props) => props.color};
   font-size: 12px;
   margin-left: 10px;
 `;
-const Title = styled.h2`
-  color: rgba(237, 218, 218, 0.82);
+const Title = styled.h2<Props>`
+  color: ${(props) => props.color};
   font-family: "Public Sans";
   font-style: normal;
   font-weight: 500;
   font-size: 40px;
 `;
 
-const TextType = styled.p`
+const TextType = styled.p<Props>`
   font-family: "Public Sans";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 19px;
 
-  color: #b0a5a5;
+  color:${(props) => props.color};
 `;
-const TextContentType = styled.p`
+const TextContentType = styled.p<Props>`
   font-family: "Public Sans";
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 19px;
-  color: rgba(255, 211, 211, 0.6);
+  color: ${(props) => props.color};
 `;
 const MiniSquare = styled.div`
   background: #009e6f;
@@ -98,14 +100,14 @@ const CardImage = styled.img`
   width: 100%;
   margin-top: 15px;
 `;
-const CardExtract = styled.p`
+const CardExtract = styled.p<Props>`
   font-family: "Public Sans";
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
   line-height: 168%;
   text-align: right;
-  color: rgba(221, 219, 219, 0.72);
+  color: ${(props) => props.color};
   margin-top: 20px;
 `;
 
