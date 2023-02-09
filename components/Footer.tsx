@@ -3,12 +3,7 @@ import styled from "styled-components";
 const Footer = () => {
   return (
     <div data-scroll-section>
-      <FooterContainer
-        data-scroll
-        data-scroll-direction="vertical"
-        data-scroll-speed="-8"
-        data-scroll-position="bottom"
-      >
+      <FooterContainer data-scroll data-scroll-position="bottom">
         <FooterLogo>
           <Link href="/">
             <img src="logo/logo.png" alt="" width={200} />
