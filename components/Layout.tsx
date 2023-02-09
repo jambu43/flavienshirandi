@@ -1,7 +1,11 @@
 import React from "react";
-
-import Navbar from "./Navbar";
+import dynamic from "next/dynamic";
 import Footer from "./Footer";
+
+const Navbar = dynamic(
+  () => import("./Navbar"),
+
+)
 
 export type Props = {
   bgColor : string;
