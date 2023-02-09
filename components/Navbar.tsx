@@ -1,5 +1,6 @@
 import Link from "next/link";
 import styled from "styled-components";
+import Logo from "./Logo";
 
 export type Props = {
   bgColor: string;
@@ -11,9 +12,7 @@ export const Navbar = ({ bgColor, logo, textColor }: Props) => {
   return (
     <NavContainer data-scroll-section bgColor={bgColor ? bgColor : "#000"}>
       <NavLogo data-scroll>
-        <Link href="/" passHref>
-          <img src={logo ? logo : "logo/logo.png"} alt="FLAVIENSHIRAND" />
-        </Link>
+        <Logo logo={logo ? logo : "/logo/logo.png"} />
       </NavLogo>
 
       <NavElement data-scroll>

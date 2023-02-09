@@ -1,13 +1,12 @@
 import styled from "styled-components";
+import Logo from "./Logo";
 
 const Footer = () => {
   return (
     <div data-scroll-section>
-      <FooterContainer data-scroll data-scroll-position="bottom">
+      <FooterContainer>
         <FooterLogo>
-          <Link href="/">
-            <img src="logo/logo.png" alt="" width={200} />
-          </Link>
+          <Logo logo={"/logo/logo.png"} />
         </FooterLogo>
 
         <QuickLink>
