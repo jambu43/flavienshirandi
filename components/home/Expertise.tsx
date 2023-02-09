@@ -2,8 +2,8 @@ import React from "react";
 import styled from "styled-components";
 function Expertise() {
   return (
-    <Container>
-      <ExpertiseContainer data-scroll-section>
+    <Container data-scroll-section>
+      <ExpertiseContainer>
         <ExpertiseDescription>
           <div className="container" data-scroll data-scroll-speed="1">
             <Title>Expertises.</Title>

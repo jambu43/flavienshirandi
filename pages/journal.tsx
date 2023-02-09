@@ -11,29 +11,29 @@ function journal() {
         textColor="#000000b8"
         logo="logo/logo-dark.png"
       >
-        <div className="container">
-        <TextHeader>
-          <div>
-            <Bar />
-            <SubTitle>MON JOURNAL</SubTitle>
-          </div>
-          <CustomLink href="/news">ALL ARTICLES</CustomLink>
-        </TextHeader>
-        <CardRow>
-          {data.map((data, key) => (
-            <Card
-              key={key}
-              doteColor={data.doteColor}
-              date={data.date}
-              title={data.title}
-              type={data.type}
-              img={data.img}
-              extract={data.extract}
-              position={data.position}
-              color="#040404d1"
-            />
-          ))}
-        </CardRow>
+        <div className="container" data-scroll-section>
+          <TextHeader>
+            <div>
+              <Bar />
+              <SubTitle>MON JOURNAL</SubTitle>
+            </div>
+            <CustomLink href="/news">ALL ARTICLES</CustomLink>
+          </TextHeader>
+          <CardRow>
+            {data.map((data, key) => (
+              <Card
+                key={key}
+                doteColor={data.doteColor}
+                date={data.date}
+                title={data.title}
+                type={data.type}
+                img={data.img}
+                extract={data.extract}
+                position={data.position}
+                color="#040404d1"
+              />
+            ))}
+          </CardRow>
         </div>
       </Layout>
     </BasedComponent>
@@ -48,15 +48,18 @@ const BasedComponent = styled.div`
     rgba(58, 96, 229, 0.31) 0.78%,
     rgb(255, 255, 255) 60.89%
   ); */
-  background: linear-gradient( 142.47deg,rgba(58, 96, 229, 0.45) 0.78%,rgb(255,255,255) 60.89% );
+  background: linear-gradient(
+    142.47deg,
+    rgba(58, 96, 229, 0.45) 0.78%,
+    rgb(255, 255, 255) 60.89%
+  );
 `;
 const CardRow = styled.div`
   display: flex;
   justify-content: space-between;
   width: 100%;
-  min-height: 70rem ;
+  min-height: 70rem;
 `;
-
 
 const TextHeader = styled.div`
   display: flex;
@@ -79,15 +82,11 @@ const SubTitle = styled.h5`
 
   text-transform: uppercase;
   color: rgba(0, 0, 0, 1);
-
 `;
 const CustomLink = styled.a`
   text-transform: uppercase;
   color: #9b9a9a;
 `;
-
-
-
 
 const data = [
   {
@@ -119,7 +118,5 @@ const data = [
       "Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue. Vestibulum auctor ornare leo, non suscipit.",
   },
 ];
-
-
 
 export default journal;
