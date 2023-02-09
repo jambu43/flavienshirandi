@@ -14,7 +14,7 @@ const Home: NextPage = () => {
       <Head>
         <title>Flavien Shirandi</title>
       </Head>
-      <Layout  bgColor="#000" textColor="#ffffffb8" logo="logo/logo.png">
+      <Layout  bgColor="#000" textColor="#ffffffb8" logo="/logo/logo.png">
         <Banner />
         <Brand />
         <About />
