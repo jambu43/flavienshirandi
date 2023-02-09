@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 function Capabilities() {
   return (
-    <Container>
+    <Container data-scroll-section>
       <Header>
         <Bar />
         <Title>SHIRANDI’S CAPABILITIES</Title>

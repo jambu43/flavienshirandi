@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 function Leaders() {
   return (
-    <Container>
+    <Container data-scroll-section>
       <ImageContainer>
         <Image src="/images/about/leader.png" />
       </ImageContainer>

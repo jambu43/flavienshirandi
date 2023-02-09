@@ -5,7 +5,7 @@ import Card from "../news/Card";
 
 function News() {
   return (
-    <Container>
+    <Container data-scroll-section>
       <div className="container">
         <TextHeader>
           <div>

@@ -10,7 +10,7 @@ export type Props = {
 
 export const Navbar: React.FC<Props> = ({ bgColor, logo, textColor }) => {
   return (
-    <NavContainer bgColor={bgColor ? bgColor: "#000"}>
+    <NavContainer data-scroll-section bgColor={bgColor ? bgColor: "#000"}>
       <NavLogo>
         <Link href="/">
           <img src={logo ? logo : "logo/logo.png" } alt="FLAVIENSHIRAND" />

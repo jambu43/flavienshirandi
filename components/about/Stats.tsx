@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 function Stats() {
   return (
-    <Content>
+    <Content data-scroll-section>
       <Container>
         {data.map((data) => (
           <StatContent>

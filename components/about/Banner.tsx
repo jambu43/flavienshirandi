@@ -4,7 +4,7 @@ import styled from "styled-components";
 
 function Banner() {
   return (
-    <BannerComponent>
+    <BannerComponent data-scroll-section>
       <DescriptionBlock>
         <Title>
           Assist you get – and stay – ready to take on the leadership challenges

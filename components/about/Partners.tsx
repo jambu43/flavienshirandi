@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 function Partners() {
   return (
-    <Content>
+    <Content data-scroll-section>
       <Container>
         {data.map((data)=>(
         <LogoContainer>
