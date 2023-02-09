@@ -11,7 +11,7 @@ import News from "../components/about/News";
 function about() {
   return (
     <BasedComponent>
-      <Layout bgColor="transparent" textColor="#000000b8" logo="logo/logo-dark.png">
+      <Layout bgColor="transparent" textColor="#000000b8" logo="/logo/logo-dark.png">
         <div className="container">
           <Banner />
           <Capabilities />

@@ -9,7 +9,7 @@ function journal() {
       <Layout
         bgColor="transparent"
         textColor="#000000b8"
-        logo="logo/logo-dark.png"
+        logo="/logo/logo-dark.png"
       >
         <div className="container" data-scroll-section>
           <TextHeader>
