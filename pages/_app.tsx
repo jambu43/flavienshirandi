@@ -17,6 +17,8 @@ import NextNProgress from "nextjs-progressbar";
 import { createWrapper } from "next-redux-wrapper";
 import store from "../redux/store";
 import { Provider } from "react-redux";
+import Footer from "../components/Footer";
+
 
 // import styles
 
@@ -62,6 +64,7 @@ function MyApp({ Component, pageProps }: AppProps) {
             <main className="main" data-scroll-container>
               <Component {...pageProps} />
             </main>
+            
           </ThemeProvider>
         </GlobalProvider>
       </Provider>

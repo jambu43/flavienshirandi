@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 const Footer = () => {
   return (
-    <FooterContainer >
+    <FooterContainer data-scroll-section >
       <FooterLogo>
         <Link href="/">
           <img src="logo/logo.png" alt="" width={200} />
