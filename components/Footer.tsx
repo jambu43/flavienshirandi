@@ -2,32 +2,39 @@ import styled from "styled-components";
 
 const Footer = () => {
   return (
-    <FooterContainer data-scroll-section >
-      <FooterLogo>
-        <Link href="/">
-          <img src="logo/logo.png" alt="" width={200} />
-        </Link>
-      </FooterLogo>
+    <div data-scroll-section>
+      <FooterContainer
+        data-scroll
+        data-scroll-direction="vertical"
+        data-scroll-speed="-8"
+        data-scroll-position="bottom"
+      >
+        <FooterLogo>
+          <Link href="/">
+            <img src="logo/logo.png" alt="" width={200} />
+          </Link>
+        </FooterLogo>
 
-      <QuickLink>
-        <Link href="/">Home</Link>
-        <Link href="/journal">Journal</Link>
-        <Link href="/about">About</Link>
-        <Link href="/works">Works</Link>
-        <Link href="/companies">Companies</Link>
-      </QuickLink>
+        <QuickLink>
+          <Link href="/">Home</Link>
+          <Link href="/journal">Journal</Link>
+          <Link href="/about">About</Link>
+          <Link href="/works">Works</Link>
+          <Link href="/companies">Companies</Link>
+        </QuickLink>
 
-      <ContactContainer>
-        <Link href="">+243 973 470 888</Link>
-        <Link href="">info@flavienshirandi.com</Link>
-        <AddressContainer>
-          26, Mont des arts Avenue, <br />
-          Gombe, Kinshasa <br />
-          Democratic Republic of Congo
-        </AddressContainer>
-      </ContactContainer>
-      <img src="/images/vector.png" alt="" className="footer-vector" />
-    </FooterContainer>
+        <ContactContainer>
+          <Link href="">+243 973 470 888</Link>
+          <Link href="">info@flavienshirandi.com</Link>
+          <AddressContainer>
+            26, Mont des arts Avenue, <br />
+            Gombe, Kinshasa <br />
+            Democratic Republic of Congo
+          </AddressContainer>
+        </ContactContainer>
+        <img src="/images/vector.png" alt="" className="footer-vector" />
+      </FooterContainer>
+    </div>
   );
 };
 
