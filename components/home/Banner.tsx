@@ -34,6 +34,7 @@ function Banner() {
         </Description>
         <Action data-scroll data-scroll-speed="3">
           SCROLL TO DISCOVER
+          <i className="uil uil-arrow-down"></i>
         </Action>
         <CopyrightContainer data-scroll data-scroll-speed="3">
           <Text>

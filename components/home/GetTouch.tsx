@@ -4,7 +4,9 @@ function GetTouch() {
   return (
     <Container data-scroll-section>
       <Title>Get In Touch</Title>
-      <Action href="#" />
+      <Action href="#">
+        <i className="uil uil-arrow-right"></i>
+      </Action>
     </Container>
   );
 }
