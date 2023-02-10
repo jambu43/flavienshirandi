@@ -50,7 +50,7 @@ const Title = styled.h2`
 `;
 const Description = styled.p`
   color: #848484;
-  font-size: 10px;
+  font-size: 12px;
   width: 25%;
   margin: auto;
 `;
@@ -67,7 +67,7 @@ const Brand = styled.h3`
   width: 100%;
 `;
 const Text = styled.p`
-  font-size: 10px;
+  font-size: 14px;
   width: 25%;
   color: #848484;
 `;

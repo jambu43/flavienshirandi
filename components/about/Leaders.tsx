@@ -89,7 +89,7 @@ const Description = styled.p`
   font-family: "Neurial Grotesk";
   font-style: normal;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 18px;
   color: #6c6a6a;
   width: 80%;
 `;

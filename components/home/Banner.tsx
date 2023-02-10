@@ -136,7 +136,7 @@ const Title = styled.h1`
 const Description = styled.p`
   font-style: normal;
   font-weight: 400;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 154.5%;
   color: #848484;
   width: 80%;

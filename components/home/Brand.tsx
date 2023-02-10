@@ -108,7 +108,7 @@ const BrandImg = styled.img`
   margin-top: 20px;
 `;
 const BrandDescription = styled.p`
-  font-size: 10px;
+  font-size: 14px;
   color: #848484;
   margin-top: 5rem;
   width: 70%;

@@ -53,7 +53,7 @@ const Title = styled.h1`
 const Description = styled.p`
   font-family: "Neurial Grotesk";
   font-weight: 100;
-  font-size: 16px;
+  font-size: 20px;
   color: #6c6a6a;
   width: 55%;
   margin-bottom: 2rem;
