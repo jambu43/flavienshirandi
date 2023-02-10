@@ -15,7 +15,7 @@ function journal() {
           <TextHeader>
             <div>
               <Bar />
-              <SubTitle>MON JOURNAL</SubTitle>
+              <SubTitle className="animate__animated animate__bounceIn" >MON JOURNAL</SubTitle>
             </div>
             <CustomLink href="/news">ALL ARTICLES</CustomLink>
           </TextHeader>

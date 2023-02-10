@@ -6,7 +6,7 @@ function Brand() {
     <div className="container" data-scroll-section>
       <BrandContainer>
         <TitleContainer>
-          <TitleBrand data-scroll data-scroll-speed="3">
+          <TitleBrand data-scroll data-scroll-speed="3" className="animate__animated animate__fadeInLeft animate__delay-1s animate__repeat-2 ">
             Becoming a <GreenText>great leader</GreenText> doesn't just happen
             <GreenText>.</GreenText>
           </TitleBrand>

@@ -1,6 +1,6 @@
 import Link from "next/link";
 import React, { useRef } from "react";
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 
 function Banner() {
   return (
@@ -23,16 +23,17 @@ function Banner() {
         <ImgCircle src="/images/home/circle.png" />
       </ImgContainer>
       <DescriptionContainer>
-        <Title data-scroll data-scroll-speed="3">
+        <Title data-scroll data-scroll-speed="3" className="animate__animated animate__fadeInDown  ">
           Coach leaders to achieve results using disruptive and responsible
           methods.
         </Title>
-        <Description data-scroll data-scroll-speed="3">
+
+        <Description data-scroll data-scroll-speed="3" className="animate__animated animate__fadeInDown ">
           I believe in the ability of leaders to make a significant contribution
           to business, and I am convinced that their success is directly linked
           to the adoption of disruptive and responsible methods.
         </Description>
-        <Action data-scroll data-scroll-speed="3">
+        <Action data-scroll data-scroll-speed="3" className="animate__animated animate__fadeInDown ">
           SCROLL TO DISCOVER
           <i className="uil uil-arrow-down"></i>
         </Action>
@@ -70,7 +71,44 @@ const ImgCircle = styled.img`
 `;
 const DescriptionContainer = styled.div`
   width: 35%;
+  position: relative;
+
+  & h1:nth-child(1) {
+	color: transparent;
+	-webkit-text-stroke: 1px #848484;
+  }
+
 `;
+
+
+const breatheAnimation = keyframes`
+ from {
+    font-size: 20px;
+    font-weight: 100;
+    opacity:0
+  } 
+  to {
+    font-size: 50px;
+    font-weight: 900;
+    text-shadow: 0px 0px 5px white;
+    opacity:1
+  }
+`;
+const cursor = keyframes`
+  0%, 100% { 
+    border-color: #212121; 
+  }
+`
+const text = keyframes`
+   0%,10%,100%{
+        width: 0;
+    }
+    70%,90%{
+        width: 100%;
+    }
+`
+
+
 const Title = styled.h1`
   font-style: normal;
   font-weight: 500;
@@ -78,6 +116,22 @@ const Title = styled.h1`
   line-height: 134.5%;
   color: #848484;
   width: 80%;
+  &::before{
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: #848484;
+    -webkit-text-stroke: 0vw #383d52;
+
+    overflow: hidden;
+    /* animation: ${text} 6s linear infinite; */
+
+}
+
+  
 `;
 const Description = styled.p`
   font-style: normal;
@@ -122,5 +176,7 @@ const SocialLink = styled.a`
     cursor: pointer;
   }
 `;
+
+
 
 export default Banner;

@@ -6,18 +6,18 @@ function Banner() {
   return (
     <BannerComponent data-scroll-section>
       <DescriptionBlock>
-        <Title>
+        <Title className="animate__animated animate__bounceIn">
           Assist you get – and stay – ready to take on the leadership challenges
           you face.{" "}
         </Title>
-        <Description>
+        <Description className="animate__animated animate__fadeInDown ">
           With 18 years’ experience in leadership consulting. We've built a
           reputation for delivering real impact for our clients — from the
           world’s largest companies to politicals to nonprofits.
         </Description>
         <Line />
         <SignUpTitle>Sign up</SignUpTitle>
-        <SignUpDescription>
+        <SignUpDescription className="animate__animated animate__fadeInDown ">
           Receive Flavien Shirandi’s latest analysis.
         </SignUpDescription>
         <FormRow>
