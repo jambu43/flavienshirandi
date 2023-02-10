@@ -74,8 +74,8 @@ const DescriptionContainer = styled.div`
   position: relative;
 
   & h1:nth-child(1) {
-	color: transparent;
-	-webkit-text-stroke: 1px #848484;
+	/* color: transparent; */
+	/* -webkit-text-stroke: 1px #848484; */
   }
 
 `;
