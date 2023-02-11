@@ -7,6 +7,7 @@ import Leaders from "../components/about/Leaders";
 import Stats from "../components/about/Stats";
 import Partners from "../components/about/Partners";
 import News from "../components/about/News";
+import GetTouch from "../components/about/GetTouch";
 
 function about() {
   return (
@@ -19,8 +20,9 @@ function about() {
           <Stats />
           <Partners />
         </div>
-
         <News />
+        
+        <GetTouch />
       </Layout>
     </BasedComponent>
   );

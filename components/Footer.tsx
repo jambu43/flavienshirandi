@@ -6,7 +6,7 @@ const Footer = () => {
     <div data-scroll-section>
       <FooterContainer>
         <FooterLogo>
-          <Logo logo={"/logo/logo.png"} />
+          <Logo logo={"/logo/logo.png"}/>
         </FooterLogo>
 
         <QuickLink>
@@ -42,7 +42,7 @@ const FooterContainer = styled.div`
   align-items: flex-start;
 `;
 const FooterLogo = styled.div`
-  width: 25%;
+  width: 15%;
 `;
 const QuickLink = styled.div`
   display: flex;

@@ -54,11 +54,12 @@ const NavContainer = styled.div<Props>`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 5rem 5rem;
+  padding: 3rem 5rem;
   background-color: ${(props) => props.bgColor};
+  
 `;
 const NavLogo = styled.div`
-  width: 25%;
+  width: 15%;
 `;
 const NavElement = styled.div`
   width: 65%;

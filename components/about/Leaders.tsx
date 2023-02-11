@@ -86,12 +86,14 @@ const TitleColor = styled.span`
   color: #29a077;
 `;
 const Description = styled.p`
-  font-family: "Neurial Grotesk";
+font-family: "Questrial", sans-serif;
+  font-weight: 100;
+  font-size: 20px;
   font-style: normal;
   font-weight: 400;
-  font-size: 18px;
   color: #6c6a6a;
   width: 80%;
+  line-height: 1.5;
 `;
 
 const ActionContainer = styled.div`
@@ -101,14 +103,14 @@ const ActionContainer = styled.div`
 const ActionGreen = styled.a`
   background: #29a077;
   border-radius: 5px;
-  padding: 1.2rem 3rem;
+  padding: 1.2rem 4rem;
   font-size: 10px;
   color: #fff;
 `;
 const ActionTransparent = styled.a`
   border: 1px solid #29a077;
   border-radius: 5px;
-  padding: 1.2rem 3rem;
+  padding: 1.2rem 4rem;
   font-size: 10px;
   color: #292929;
   margin-left: 2rem;

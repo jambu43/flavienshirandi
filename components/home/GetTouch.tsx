@@ -5,7 +5,7 @@ function GetTouch() {
     <Container data-scroll-section>
       <Title>Get In Touch</Title>
       <Action href="#">
-        <i className="uil uil-arrow-right"></i>
+        <Icon className="uil uil-arrow-right" />
       </Action>
     </Container>
   );
@@ -30,5 +30,12 @@ const Action = styled.a`
   border-radius: 100%;
   bottom: 19rem;
   left: 46rem;
+`;
+const Icon = styled.i`
+  font-size: 7rem;
+  position: relative;
+  left: 17px;
+  bottom: 8px;
+  color: #fff;
 `;
 export default GetTouch;

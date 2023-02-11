@@ -47,7 +47,7 @@ const Number = styled.span`
 
 const Title = styled.p`
   color: rgba(30, 30, 30, 0.67);
-  font-size: 12px;
+  font-size: 16px;
   width: 60%;
   margin-left: 20px;
 `;

@@ -5,7 +5,7 @@ import styled, { keyframes } from "styled-components";
 function Banner() {
   return (
     <BannerComponent data-scroll-section>
-      <SocialContainer data-scroll data-scroll-speed="3">
+      <SocialContainer>
         <Link href="#">
           <SocialLink>Twitter</SocialLink>
         </Link>
@@ -23,7 +23,7 @@ function Banner() {
         <ImgCircle src="/images/home/circle.png" />
       </ImgContainer>
       <DescriptionContainer>
-        <Title data-scroll data-scroll-speed="3" className="animate__animated animate__fadeInDown  ">
+        <Title data-scroll data-scroll-speed="2" className="animate__animated animate__fadeInDown  ">
           Coach leaders to achieve results using disruptive and responsible
           methods.
         </Title>
@@ -37,7 +37,7 @@ function Banner() {
           SCROLL TO DISCOVER
           <i className="uil uil-arrow-down"></i>
         </Action>
-        <CopyrightContainer data-scroll data-scroll-speed="3">
+        <CopyrightContainer>
           <Text>
             N 43’30”32.0 <br />O 43’30”32.0
           </Text>
@@ -49,7 +49,7 @@ function Banner() {
 }
 
 const BannerComponent = styled.div`
-  height: 900px;
+  height: 1020px;
   display: flex;
   width: 100%;
   padding: 0 5rem;
@@ -66,13 +66,13 @@ const ImgContainer = styled.div`
 `;
 const ImgCircle = styled.img`
   width: 500px;
-  top: 29%;
-  position: relative;
+  /* top: 29%; */
+  /* position: relative; */
 `;
 const DescriptionContainer = styled.div`
   width: 35%;
   position: relative;
-
+  bottom:8%;
   & h1:nth-child(1) {
 	/* color: transparent; */
 	/* -webkit-text-stroke: 1px #848484; */
@@ -158,7 +158,8 @@ const Action = styled.a`
 const CopyrightContainer = styled.div`
   display: flex;
   justify-content: space-between;
-  margin-top: 2rem;
+  position: relative;
+  top: 12rem;
 `;
 const Text = styled.p`
   color: #848484;

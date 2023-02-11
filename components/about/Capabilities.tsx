@@ -11,16 +11,27 @@ function Capabilities() {
         {data.map((data) => (
           <Card>
             <CardTitle>{data.title}</CardTitle>
+            <ArrowImg src={data.icon} />
             <CardDescription>{data.description}</CardDescription>
           </Card>
         ))}
+        <Card>
+          <CardTitle>
+            POLITICAL <br /> CONSULTANCY AND <br /> CAMPAIGNS
+          </CardTitle>
+          <ArrowImg src="/images/arrow-img-light.png" style={{ bottom: "5.9rem" }}/>
+          <CardDescription style={{ top: "1rem" }}>
+            I help you to understand what’s driving an issue, the key players,
+            and how they can be swayed.
+          </CardDescription>
+        </Card>
       </CardContainer>
     </Container>
   );
 }
 
 const Container = styled.div`
-  padding: 5rem 0;
+  /* padding: 5rem 0; */
 `;
 const Header = styled.div`
   display: flex;
@@ -57,19 +68,19 @@ const Card = styled.div`
   }
   &:nth-child(2) {
     background: #3a53e3;
-    color:#F2FBF4;
+    color: #f2fbf4;
   }
   &:last-child {
     background-color: #29282b;
-    color:#F2FBF4;
+    color: #f2fbf4;
   }
 `;
 const CardTitle = styled.h5`
   font-family: "Public Sans";
   font-style: normal;
   font-size: 15px;
-
-
+  line-height: 1.5;
+  white-space: pre
 `;
 const CardDescription = styled.p`
   font-family: "Public Sans";
@@ -78,24 +89,31 @@ const CardDescription = styled.p`
   font-size: 20px;
   width: 70%;
   position: relative;
-  top: 9rem;
+  top: 5rem;
 `;
-
+const ArrowImg = styled.img`
+  position: relative;
+  bottom: 3rem;
+  left: 19rem;
+  width: 35px;
+`;
 const data = [
   {
     title: "EXECUTIVE COACHING",
     description:
       "Unleash your full potential with executive coaching for Boards, CEOs and executives.",
+    icon: "/images/arrow-img-dark.png",
   },
   {
     title: "LEADERSHIP DEVELOPMENT",
     description:
       "Let's create leaders in your organization with a leadership development program.",
+    icon: "/images/arrow-img-light.png",
   },
-  {
-    title: "POLITICAL CONSULTANCY AND CAMPAIGNS",
-    description:
-      "I help you to understand what’s driving an issue, the key players, and how they can be swayed.",
-  },
+  // {
+  //   title: "POLITICAL CONSULTANCY AND CAMPAIGNS",
+  //   description:
+  //     "I help you to understand what’s driving an issue, the key players, and how they can be swayed.",
+  // },
 ];
 export default Capabilities;

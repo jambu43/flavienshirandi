@@ -26,16 +26,16 @@ export const Card: React.FC<Props> = ({
     <CardContainer position={position ? position : ""}>
       <CardHead>
         <Dote doteColor={doteColor} />
-        <Date color={color ? color : "#d9b5b5"}>{date}</Date>
+        <Date color={color ? color : "#8c8c8c"}>{date}</Date>
       </CardHead>
 
-      <Title color={color ? color : "#d9b5b5"}>{title}</Title>
-      <TextType color={color ? color : "#d9b5b5"}>Type</TextType>
-      <TextContentType color={color ? color : "#d9b5b5"}>{type}</TextContentType>
+      <Title color={color ? color : "#fff"}>{title}</Title>
+      <TextType color={color ? color : "#8c8c8c"}>Type</TextType>
+      <TextContentType color={color ? color : "#8c8c8c"}>{type}</TextContentType>
       <CardContent>
         <MiniSquare />
         <CardImage src={img} />
-        <CardExtract color={color ? color : "#d9b5b5"}>{extract}</CardExtract>
+        <CardExtract color={color ? color : "#8c8c8c"}>{extract}</CardExtract>
         <ReadMor href="#">Read more</ReadMor>
       </CardContent>
     </CardContainer>
@@ -104,7 +104,7 @@ const CardExtract = styled.p<Props>`
   font-family: "Public Sans";
   font-style: normal;
   font-weight: 400;
-  font-size: 12px;
+  font-size: 15px;
   line-height: 168%;
   text-align: right;
   color: ${(props) => props.color};

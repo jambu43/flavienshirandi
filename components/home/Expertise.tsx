@@ -4,8 +4,8 @@ function Expertise() {
   return (
     <Container data-scroll-section>
       <ExpertiseContainer>
-        <ExpertiseDescription>
-          <div className="container" data-scroll data-scroll-speed="1">
+        <ExpertiseDescription data-scroll data-scroll-speed="1">
+          <div className="container">
             <Title>Expertises.</Title>
             <Description>
               Built-in solutions to help your organization achieve goals by
@@ -78,7 +78,7 @@ const Title = styled.h3`
 `;
 const Description = styled.p`
   color: #1e1e1e;
-  font-size: 14px;
+  font-size: 16px;
   position: relative;
 `;
 const Row = styled.div`
@@ -94,10 +94,11 @@ const Card = styled.div`
 const TitleCard = styled.h4`
   color: #1e1e1e;
   font-weight: 400;
+  font-size: 23px;
 `;
 const DescriptionCard = styled.p`
-  color: #1e1e1e;
-  font-size: 12px;
+  color: #1e1e1e99;
+  font-size: 16px;
 `;
 const Square = styled.div`
   width: 20px;
