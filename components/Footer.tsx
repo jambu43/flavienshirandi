@@ -30,9 +30,8 @@ const Footer = () => {
         <Row>
           <CopyTitle>
             © 2023 <br />
-            flavien Shirandi ™ shirandi Consulting Group SAS
-            <br />
-            legal Notice
+            Flavien Shirandi ™ <br />
+            Shirandi Consulting Group SAS
             <br />
           </CopyTitle>
           <ByGroup>
@@ -92,14 +91,16 @@ const CopyTitle = styled.p`
     color: rgba(255, 255, 255, 0.72);
     font-style: normal;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 12px;
+  opacity: 0.6;
 `;
 const ByGroup = styled.p`
   text-align: right;
   color: rgba(255, 255, 255, 0.72);
   font-style: normal;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 12px;
+  opacity: 0.6;
 `;
 
 export default Footer;
