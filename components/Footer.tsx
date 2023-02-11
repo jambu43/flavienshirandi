@@ -6,7 +6,7 @@ const Footer = () => {
     <div data-scroll-section>
       <FooterContainer>
         <FooterLogo>
-          <Logo logo={"/logo/logo.png"}/>
+          <Logo logo={"/logo/logo.png"} />
         </FooterLogo>
 
         <QuickLink>
@@ -27,6 +27,19 @@ const Footer = () => {
           </AddressContainer>
         </ContactContainer>
         <img src="/images/vector.png" alt="" className="footer-vector" />
+        <Row>
+          <CopyTitle>
+            © 2023 <br />
+            flavien Shirandi ™ shirandi Consulting Group SAS
+            <br />
+            legal Notice
+            <br />
+          </CopyTitle>
+          <ByGroup>
+            Website by <br />
+            Shirandi Consulting Group
+          </ByGroup>
+        </Row>
       </FooterContainer>
     </div>
   );
@@ -66,6 +79,27 @@ const Link = styled.a`
   text-transform: capitalize;
   color: rgba(255, 255, 255, 0.72);
   margin-bottom: 1rem;
+`;
+const Row = styled.div`
+  display: flex;
+  position: absolute;
+  left: 19rem;
+  width: 70%;
+  bottom: 14px;
+  justify-content: space-between;
+`;
+const CopyTitle = styled.p`
+    color: rgba(255, 255, 255, 0.72);
+    font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+`;
+const ByGroup = styled.p`
+  text-align: right;
+  color: rgba(255, 255, 255, 0.72);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
 `;
 
 export default Footer;
