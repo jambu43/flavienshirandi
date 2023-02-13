@@ -122,8 +122,8 @@ const EmailInput = styled.input`
 const IconEmail = styled.i`
   position: absolute;
   font-size: 30px;
-  left: 14rem;
-  bottom: 14px;
+  left: 33%;
+  bottom: 2.5%;
   color: rgba(0, 0, 0, 0.52);
 `;
 const SubmitFormBtn = styled.button`

@@ -12,7 +12,11 @@ import GetTouch from "../components/about/GetTouch";
 function about() {
   return (
     <BasedComponent>
-      <Layout bgColor="transparent" textColor="#000000b8" logo="/logo/logo-dark.png">
+      <Layout
+        bgColor="transparent"
+        textColor="#000000b8"
+        logo="/logo/logo-dark.png"
+      >
         <div className="container">
           <Banner />
           <Capabilities />
@@ -21,7 +25,7 @@ function about() {
           <Partners />
         </div>
         <News />
-        
+
         <GetTouch />
       </Layout>
     </BasedComponent>
@@ -37,5 +41,3 @@ const BasedComponent = styled.div`
   );
 `;
 export default about;
-
-
